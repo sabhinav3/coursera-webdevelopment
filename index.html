@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+  border: 3px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    
+  }
+  .col-md-1 {
+    width: 33.33%;
+  }
+  .col-md-2 {
+    width: 66.66%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+
+@media (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+
+}
+ 
+}
+
+</style>
+</head>
+<body>
+<h1><center> Menu </center></h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6"><p>Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, among many others, depending on its purpose. Since the latter half of the 20th century, prepared chicken has become a staple of fast food.</p></div>
+  <div class="col-lg-3 col-md-6"><p>Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky).</p></div>
+  <div class="col-lg-3 col-md-6"><p>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. </p></div>
+  
+</div>
+
+</body>
+</html>
