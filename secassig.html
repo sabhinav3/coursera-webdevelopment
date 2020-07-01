@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Second Assignment</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/index.css">
+   <!-- java -->
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+
+  .bg-light {
+    background-color: #000000!important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 253, 253, 0.7);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 253, 253);
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    /* background-color: transparent; */
+    border: 1px solid white;
+    border-radius: .25rem;
+}
+
+
+#header-nav{
+    background-color: black;
+    border-radius: 0;
+    border:0;
+  }
+
+  #navbar-header a img{
+    align-items: left;
+
+  }
+
+
+
+  .row {
+      margin-right: -15px;
+      margin-left: -15px;
+  }
+
+  #chicken, #beef, #sushi {
+      box-sizing: border-box;
+      height: 250px;
+      width: 350px;
+      /*margin-bottom: 15px;*/
+      position: relative;
+      border: 3px solid #3F0C1F;
+      overflow: hidden;
+      padding: 3px;
+  }
+
+
+  #chicken:hover, #beef:hover, #sushi:hover {
+      box-shadow: 0 1px 5px 1px #cccccc;
+    }
+
+    #chicken{
+       background: url('menu-tile.jpg') no-repeat;
+      background-position: center;
+      overflow: scroll;
+    
+        
+    }
+
+    #beef{
+       background: url('beef.jpg') no-repeat;
+        background-position: center;
+        object-fit:cover;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center center; 
+        overflow: scroll;
+
+        
+    }
+
+    #sushi{
+       background: url('sushi.jpg') no-repeat;
+        background-position: center;
+        object-fit:cover;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center center; 
+        overflow: scroll;
+
+
+        
+    }
+
+    #chicken span, #beef span, #sushi span {
+      
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6em;
+      text-transform: uppercase;
+      background-color: #000;
+      color: #fff;
+      opacity: .8;
+  }
+
+  #chicken span p, #beef span p, #sushi span p {
+
+      padding: 2px;
+      width: 90%;
+      height: 150px;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: Helvetica;
+      color: white;
+      color:white;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+
+
+  .blocks{
+    width:100%;
+  }
+
+.item{
+  border: 8px solid white;
+  
+
+
+
+}
+
+</style>
+
+
+<body>
+
+		<!-- NAVBAR Start's -->
+	<!-- <nav id="header-nav" class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="sec-assig.html" class="pull-left visible-md visible-lg ">
+				<img src="food.png" alt="Logo" width="250" height="100">
+			    </a>
+
+
+			</div>
+		</div>
+	</nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+  <a href="sec-assig.html" class="pull-left visible-md visible-lg ">
+        <img src="food.png" alt="Logo" width="250" height="100">
+          </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="praj.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="praj.html">Chicken</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="praj.html">Beef</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="praj.html">Sushi</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+	<!-- NAVBAR is Completed -->
+
+
+	<!-- Starting of the Blocks -->
+
+	<div id="blocks" class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12 item">
+			<div id="chicken"><span>Chicken</span><p>Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, among many others, depending on its purpose. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.</p>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12 item">
+			<div id="beef"><span>Beef</span><p>Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. </p>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12 item">
+			<div id="sushi"><span>Sushi</span><p>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce</p></div>
+		</div>
+
+	</div>
+
+	<!-- Ending Starting of the Blocks -->
+
+
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
