@@ -2,9 +2,9 @@
 These are the various Web Development projects developed using HTML, CSS, Javascript.
 
 ## Table of contents
-* [GBasic Menu view](#Basic Menu view)
-* [Systematized Menu](#Systematized Menu)
-* [Restaurant Webpage](#Restaurant Webpage)
+* [Basic Menu view](#Basic-Menu-view)
+* [Systematized Menu](#Systematized-Menu)
+* [Restaurant Webpage](#Restaurant-Webpage)
 
 ## Basic Menu view
 
